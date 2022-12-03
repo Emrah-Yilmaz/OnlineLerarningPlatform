@@ -40,7 +40,7 @@ namespace FreeCourse.Services.Catalog.Services
 
         public async Task<Response<CategoryDto>> GetByIdAsync(string id)
         {
-            var category = await _categoryCollection.Find<Category>(x => x.Id == id).FirstOrDefaultAsync();
+            var category = await _categoryCollection.Find<Category>(x => x.Id == id).SingleOrDefaultAsync();
 
             if (category == null)
             {
