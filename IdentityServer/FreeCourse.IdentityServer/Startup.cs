@@ -1,8 +1,4 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
-
-
-using IdentityServer4;
+﻿using IdentityServer4;
 using FreeCourse.IdentityServer.Data;
 using FreeCourse.IdentityServer.Models;
 using Microsoft.AspNetCore.Builder;
@@ -28,8 +24,8 @@ namespace FreeCourse.IdentityServer
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLocalApiAuthentication();
             services.AddControllersWithViews();
-
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -82,6 +78,7 @@ namespace FreeCourse.IdentityServer
 
             app.UseRouting();
             app.UseIdentityServer();
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {

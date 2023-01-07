@@ -11,9 +11,13 @@ namespace FreeCourse.IdentityServer
     public static class Config
     {
         public static IEnumerable<IdentityResource> IdentityResources =>
-                   new IdentityResource[]
-                   {
-                   };
+                        new IdentityResource[]
+                        {
+                       new IdentityResources.Email(),
+                       new IdentityResources.OpenId(),
+                       new IdentityResources.Profile(),
+                       new IdentityResource(){ Name="roles", DisplayName="Roles", Description="Kullanıcı rolleri", UserClaims=new []{ "role"} }
+                        };
         public static IEnumerable<ApiResource> ApiResources => new ApiResource[]
         {
             new ApiResource("resource_catalog"){Scopes={"catalog_fullpermission"}},
