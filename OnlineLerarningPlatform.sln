@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCourse.IdentityServer", "IdentityServer\FreeCourse.IdentityServer\FreeCourse.IdentityServer.csproj", "{934C51D8-65DF-46F9-91DE-A31074182E99}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{E9BA08F7-9DC5-425A-965F-EBE914BAE344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Servics.PhotoStock", "PhotoStock\FreeCourse.Servics.PhotoStock\FreeCourse.Servics.PhotoStock.csproj", "{9EF3CA3C-626C-401C-A20B-812907F7CA73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{934C51D8-65DF-46F9-91DE-A31074182E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{934C51D8-65DF-46F9-91DE-A31074182E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{934C51D8-65DF-46F9-91DE-A31074182E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF3CA3C-626C-401C-A20B-812907F7CA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF3CA3C-626C-401C-A20B-812907F7CA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF3CA3C-626C-401C-A20B-812907F7CA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF3CA3C-626C-401C-A20B-812907F7CA73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,8 @@ Global
 		{9418FC27-D25A-42C2-AF22-5550C3E6DDF8} = {FD17D8AC-8F5C-43DF-9946-FE2BAF18B7D0}
 		{7284F2EB-CFBF-4993-83DB-3B731DFE0E0F} = {D5770401-00EB-4A31-A87B-927734018E9E}
 		{934C51D8-65DF-46F9-91DE-A31074182E99} = {431E4365-6B67-434E-9700-AE0AB35FB841}
+		{E9BA08F7-9DC5-425A-965F-EBE914BAE344} = {D4814E92-EBD1-41D2-86CF-FD0ED4E178D9}
+		{9EF3CA3C-626C-401C-A20B-812907F7CA73} = {E9BA08F7-9DC5-425A-965F-EBE914BAE344}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4EB73D9-9DD3-4502-BC01-F1CBAE529C46}
